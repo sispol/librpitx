@@ -57,7 +57,7 @@ amdmasync::amdmasync(uint64_t TuneFrequency,uint32_t SR,int Channel,uint32_t Fif
 
 amdmasync::~amdmasync()
 {
-	clkgpio::disableclk(4);
+	clkgpio::disableclk(20);
 	padgpio pad;
 	pad.gpioreg[PADS_GPIO_0]=Originfsel;
 }
