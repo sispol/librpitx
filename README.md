@@ -4,6 +4,8 @@ It is now the base of *rpitx* project, separate from application
 
 _Copyright (c) Evariste Courjaud F5OEO. Code is GPL_V3
 
+_GPIO 4 CLK by default changed to GPIO 20
+
 # Installation
 
 ```sh
