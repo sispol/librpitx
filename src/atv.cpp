@@ -37,7 +37,7 @@ atv::atv(uint64_t TuneFrequency, uint32_t SR, int Channel, uint32_t Lines) : dma
     clkgpio::SetAdvancedPllMode(true);
     clkgpio::SetCenterFrequency(TuneFrequency, SampleRate);
     clkgpio::SetFrequency(0);
-    clkgpio::enableclk(4); // GPIO 4 CLK by default
+    clkgpio::enableclk(20); // GPIO 4 CLK by default changed to GPIO 20
     syncwithpwm = true;
 
     if (syncwithpwm)
